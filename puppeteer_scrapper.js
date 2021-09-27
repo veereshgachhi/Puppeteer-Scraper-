@@ -1,6 +1,4 @@
-function scraper(x){
-
-if (x=='Lets Scrape'){
+function scraper(){
 
 const puppeteer = require('puppeteer');
 const ObjectsToCsv = require('objects-to-csv');
@@ -162,9 +160,6 @@ async function autoScroll2(page){
             }, 400);
         });
     });
-}}
-else{
-  console.log('No Scraping Done')
 }}
 
 module.exports.scraper = scraper;
